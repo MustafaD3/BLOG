@@ -1,0 +1,96 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--large-gap) + var(--large-gap) + var(--large-gap));
+    padding: var(--medium-pd);
+    #posts{
+        @extend .post-box;
+        .post{
+            .link{
+                .post-content{
+                    img{
+                        display: block;
+                        margin: var(--medium-gap) auto;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    #github-posts{
+        @extend .post-box;
+        .post{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                align-items: center;
+                justify-content: center;
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.post-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--large-gap) + var(--medium-gap));
+    flex-wrap: wrap;
+   .post{
+        border: 1px solid var(--tertiary-color);
+        min-width: 20%;
+        max-width: 20%;
+        min-height: 285px;
+        max-height: 385px;
+        padding: var(--large-pd);
+        box-shadow: 10px 10px 0px var(--tertiary-color);
+        transition: .2s;
+    &:hover{
+        box-shadow: 0px 0px 0px transparent;
+        transform: translate(10px,10px);
+        transition: .2s;
+    }
+    .link{
+        color: var(--tertiary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--medium-gap);
+        height: 100%;
+        width: 100%;
+        .post-title{
+            font-family: var(--secondary-font);
+        }
+        .post-content{
+            display: -webkit-box;
+            -webkit-line-clamp: 10;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-family: var(--primary-font);
+            font-weight:300;
+        }
+    }
+   }
+}
+@media screen and (max-width:1100px) {
+    .post{
+        min-width: 35% !important;
+        max-width: 35% !important;
+    }
+}
+@media screen and (max-width:675px) {
+    .post{
+        min-width: 46% !important;
+        max-width: 46% !important;
+    }
+}
+@media screen and (max-width:575px) {
+    .post{
+        min-width: 74% !important;
+        max-width: 74% !important;
+    }
+}

@@ -1,0 +1,17 @@
+#single-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--large-gap) + var(--large-gap));
+}
+#single-post #single-post-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: calc(var(--large-gap) + var(--large-gap));
+  width: 100%;
+}
+#single-post #single-post-content img {
+  width: 40%;
+  border-radius: var(--medium-rd);
+}/*# sourceMappingURL=style.css.map */

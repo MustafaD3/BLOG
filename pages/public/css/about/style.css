@@ -1,0 +1,12 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--large-gap);
+  padding: var(--medium-pd);
+}
+#about #text {
+  line-height: 27px;
+  font-family: var(--primary-font);
+  width: 60%;
+}/*# sourceMappingURL=style.css.map */

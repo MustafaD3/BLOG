@@ -1,0 +1,40 @@
+#admin-login-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+#admin-login-main #admin-login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--medium-gap);
+  padding: var(--large-pd);
+  width: 20%;
+  height: 25%;
+  border: 1px solid var(--black);
+  box-shadow: 10px 10px 0px var(--black);
+}
+#admin-login-main #admin-login-form h1 {
+  font-family: var(--primary-font);
+}
+#admin-login-main #admin-login-form input {
+  font-family: var(--primary-font);
+  padding: var(--small-pd);
+  width: 100%;
+}
+#admin-login-main #admin-login-form input:not([type=submit]) {
+  font-size: var(--font-size-s);
+}
+#admin-login-main #admin-login-form input[type=submit] {
+  cursor: pointer;
+  transition: 0.2s;
+}
+#admin-login-main #admin-login-form input[type=submit]:hover {
+  transform: translateY(-5px);
+}
+#admin-login-main #admin-login-form input[type=submit]:active {
+  transform: translateY(-5px) scale(0.9);
+}/*# sourceMappingURL=style.css.map */

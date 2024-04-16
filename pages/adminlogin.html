@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    {{head}}
+    <link rel="stylesheet" href="/public/css/adminlogin/style.css">
+</head>
+<body>
+    <div id="toastify-container"></div>
+    <main id="admin-login-main">
+        <form id="admin-login-form">
+            <h1>Admin Girişi</h1>
+            <input name="username" placeholder="Kullanıcı Adı" required>
+            <input name="password" type="password" placeholder="Şifre" required>
+            <input type="submit" name="button" value="Giriş Yap">
+        </form>
+        <script src="/public/js/toastify.js"></script>
+        {{cookie}}
+    </main>
+    <script type="module" src="/public/js/adminlogin.js"></script>
+</body>
+</html>

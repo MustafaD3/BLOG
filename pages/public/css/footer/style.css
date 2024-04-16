@@ -1,0 +1,27 @@
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--large-pd);
+  border-top: 1px solid var(--black);
+  margin: var(--large-mg);
+}
+#footer #menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--medium-gap) + var(--small-gap));
+}
+#footer #menu li a {
+  color: var(--black);
+}
+#footer #menu li a:hover {
+  color: var(--primary-color);
+}
+#footer #menu li a:hover i {
+  transform: scale(1.1);
+}
+#footer #menu li a i {
+  font-size: calc(var(--font-size-xl) + var(--font-size-xl));
+  transition: 0.2s;
+}/*# sourceMappingURL=style.css.map */
