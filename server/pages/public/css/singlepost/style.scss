@@ -1,0 +1,23 @@
+#single-post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--large-gap) + var(--large-gap));
+    margin-top: calc(var(--large-pd) + var(--large-pd));
+    #single-post-title{
+        font-family: var(--primary-font);
+    }
+    #single-post-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: calc(var(--large-gap) + var(--large-gap));
+        width: 70%;
+        line-height: calc(var(--large-pd) + var(--large-pd));
+        font-family: var(--primary-font);
+        img{
+            width: 40%;
+            border-radius: var(--medium-rd);
+        }
+    }
+}

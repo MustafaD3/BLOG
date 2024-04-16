@@ -1,0 +1,253 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--large-gap) + var(--large-gap) + var(--large-gap));
+  padding: var(--medium-pd);
+}
+#main #posts .post .link .post-content img {
+  display: block;
+  margin: var(--medium-gap) auto;
+  width: 90%;
+}
+#main #github-posts .post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main #github-posts .post a {
+  align-items: center;
+  justify-content: center;
+}
+#main #github-posts .post a h1 {
+  text-align: center;
+}
+
+.post-box, #container #posts, #main #posts, #main #github-posts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: calc(var(--large-gap) + var(--medium-gap));
+  flex-wrap: wrap;
+}
+.post-box .post, #container #posts .post, #main #posts .post, #main #github-posts .post {
+  border: 1px solid var(--tertiary-color);
+  min-width: 20%;
+  max-width: 20%;
+  min-height: 285px;
+  max-height: 385px;
+  padding: var(--large-pd);
+  box-shadow: 10px 10px 0px var(--tertiary-color);
+  transition: 0.2s;
+}
+.post-box .post:hover, #container #posts .post:hover, #main #posts .post:hover, #main #github-posts .post:hover {
+  box-shadow: 0px 0px 0px transparent;
+  transform: translate(10px, 10px);
+  transition: 0.2s;
+}
+.post-box .post .link, #container #posts .post .link, #main #posts .post .link, #main #github-posts .post .link {
+  color: var(--tertiary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--medium-gap);
+  height: 100%;
+  width: 100%;
+}
+.post-box .post .link .post-title, #container #posts .post .link .post-title, #main #posts .post .link .post-title, #main #github-posts .post .link .post-title {
+  font-family: var(--secondary-font);
+}
+.post-box .post .link .post-content, #container #posts .post .link .post-content, #main #posts .post .link .post-content, #main #github-posts .post .link .post-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: var(--primary-font);
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1100px) {
+  .post {
+    min-width: 35% !important;
+    max-width: 35% !important;
+  }
+}
+@media screen and (max-width: 675px) {
+  .post {
+    min-width: 46% !important;
+    max-width: 46% !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .post {
+    min-width: 74% !important;
+    max-width: 74% !important;
+  }
+}
+#admin-menu-nav {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--large-pd) + var(--small-pd));
+  gap: 10em;
+}
+#admin-menu-nav .title {
+  font-family: var(--secondary-font);
+}
+#admin-menu-nav #main-page {
+  color: var(--white);
+}
+#admin-menu-nav #admin-menu-list {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--small-gap);
+}
+#admin-menu-nav #admin-menu-list .admin-menu-item {
+  color: var(--tertiary-color);
+  font-family: var(--primary-font);
+  font-size: var(--font-size-s);
+  cursor: pointer;
+}
+#admin-menu-nav #admin-menu-list .admin-menu-item:hover {
+  color: var(--secondary-color);
+}
+
+#container {
+  width: 80%;
+  height: auto;
+  min-height: 700px;
+  margin: 2em auto;
+  border-radius: var(--small-rd);
+  border: 2px solid var(--black);
+  box-shadow: 4px 4px 5px var(--black);
+  transition: 0.2s;
+  padding: calc(var(--large-pd) + var(--medium-pd));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--large-gap);
+}
+#container #page-title {
+  font-family: var(--primary-font);
+  color: var(--tertiary-color);
+}
+#container #welcome-container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container #welcome-container h1 {
+  font-family: var(--primary-font);
+  color: var(--tertiary-color);
+}
+#container #site-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--small-gap);
+}
+#container #site-info h1 {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  cursor: pointer;
+}
+#container #post-operations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--medium-gap);
+}
+#container #post-operations #post-add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--small-gap);
+  border: 2px solid var(--tertiary-color);
+  padding: calc(var(--large-pd) * 3);
+}
+#container #post-operations #post-add-form input,
+#container #post-operations #post-add-form textarea {
+  outline: none;
+  padding: var(--medium-pd);
+  border-radius: var(--small-rd);
+  font-family: var(--secondary-font);
+}
+#container #post-operations #post-add-form input {
+  width: 100%;
+}
+#container #post-operations #post-add-form textarea {
+  width: 500px;
+  height: 300px;
+  resize: none;
+}
+#container #post-operations #post-add-form textarea,
+#container #post-operations #post-add-form input:not([type=file]) {
+  border: 2px solid var(--tertiary-color);
+}
+#container #post-operations #post-add-form textarea:focus,
+#container #post-operations #post-add-form input:not([type=file]):focus {
+  border-color: var(--secondary-color);
+}
+#container #post-operations #post-add-form #image-previews-container {
+  display: flex;
+  gap: var(--small-gap);
+}
+#container #post-operations #post-add-form #image-previews-container .post-preview-image-container {
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  cursor: pointer;
+}
+#container #post-operations #post-add-form #image-previews-container .post-preview-image-container .post-preview-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid var(--tertiary-color);
+}
+#container #post-operations #post-add-form #image-previews-container .post-preview-image-container::after {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  left: 0;
+  top: 0;
+  display: none;
+  background-color: var(--secondary-color);
+  opacity: 0.1;
+}
+#container #post-operations #post-add-form #image-previews-container .post-preview-image-container:hover::after {
+  display: block;
+}
+#container #posts .post {
+  position: relative;
+}
+#container #posts .post .link .post-content img {
+  display: block;
+  margin: var(--medium-gap) auto;
+  width: 90%;
+}
+#container #posts .post .link .trash {
+  position: absolute;
+  top: 5;
+  right: 5;
+  cursor: pointer;
+}
+#container #posts .post .link .trash:hover {
+  color: var(--primary-color);
+}/*# sourceMappingURL=style.css.map */
