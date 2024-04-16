@@ -9,17 +9,18 @@ import errorRoute from "./routes/404.js";
 //Start dotenv For Use Local Environment
 configDotenv()
 
-const app = express()
 //Start Server
 function start(){
-    console.log("Sunucu Çalışıyor")
+    
     //Server App
+    const app = express()
     
     //Port
-    const PORT = process.env.PORT
-
+    const PORT = process.env.PORT || 2000
+    
     //Listen To App
     app.listen(PORT,()=>{
+        console.log("Web Sitesi " + PORT + " Portunda Çalışıyor")
         //Pages Folder Path
         const pages = dirname(fileURLToPath(import.meta.url)) + "\\pages\\"
         
